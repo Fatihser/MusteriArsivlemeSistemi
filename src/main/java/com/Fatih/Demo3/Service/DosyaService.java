@@ -32,7 +32,7 @@ public class DosyaService {
 
     public Dosya getDosyaById(String id) {
         return dosyaRepository.findById(id)
-                .orElseThrow(()->new RuntimeException("il bulunamadi"));
+                .orElseThrow(()->new RuntimeException("Dosya bulunamadi"));
     }
 
     public void updateDosya(String id, Dosya newDosya) {
